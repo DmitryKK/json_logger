@@ -1,7 +1,7 @@
-require "json"
+require "sidekiq/logging"
 
 module JsonLogger
-  class SidekiqFormatter < Logger::Formatter
+  class SidekiqFormatter < Sidekiq::Logging::Pretty
     def call(severity, timestamp, progname, message)
       default_hash = {
         type: severity,

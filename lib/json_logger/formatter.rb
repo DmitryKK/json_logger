@@ -1,5 +1,3 @@
-require "json"
-
 module JsonLogger
   class Formatter < Logger::Formatter
     def call(severity, timestamp, progname, message)
