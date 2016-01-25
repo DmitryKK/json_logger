@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["dimak33@ya.ru"]
 
   spec.summary       = "Json logger formatter"
-  spec.description   = "Simple json logger formatter for snapexit.com"
+  spec.description   = "Simple json logger formatter [rails, sidekiq]"
   spec.homepage      = "http://snapexit.com"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
@@ -21,4 +21,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+
+  spec.add_runtime_dependency "sidekiq", "~> 3"
 end
