@@ -1,5 +1,4 @@
 require "json"
-require "logger"
 
 module JsonLogger
   class Formatter < Logger::Formatter
